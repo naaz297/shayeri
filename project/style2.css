@@ -1,0 +1,115 @@
+body{
+  background-image: url("image.jpg");
+  height:1000px;
+  width:500PX;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+ 
+  
+ 
+}
+.animated-heading {
+  font-size: 3rem;
+  animation: slideFadeInLeft 2s ease-in-out;
+  margin-left: 40%;
+  text-decoration:underline dotted;
+  text-align: center;
+  white-space: nowrap;
+  font-style: italic;
+  color: #40180A;
+  margin-bottom: 0%;
+  
+
+
+}
+
+
+@keyframes slideFadeInLeft{
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.content{
+   font-size: 3rem;
+  animation: slideFadeInRight 2s ease-in-out;
+  margin-left: 20%;
+  text-decoration:underline dotted;
+  text-align: center;
+  white-space: nowrap;
+  font-style: italic;
+  color: #40180A;
+  margin-top: 0%;
+}
+@keyframes slideFadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+}
+
+
+.box{
+
+ border:1px solid rgb(74, 74, 74);
+ border-radius: 50px;
+ width:700px;
+ height:400px;
+ display: flex;
+
+ text-align: center;
+ justify-content: space-around;
+
+ padding:50px 50px 50px 50px;
+ margin-left: 35px;
+
+ font-family: "Playwrite AU QLD", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+     
+}
+
+#conatiner{
+  height:300px;
+  width:200px;
+  border:2px solid black;
+    background-color: transparent;
+     background-color: rgba(192, 192, 192, 0.5);
+    
+
+  
+    
+}
+#container1{
+   height:300px;
+   width:200px;
+     border:2px solid black;
+        background-color: transparent;
+     background-color: rgba(192, 192, 192, 0.5);
+    
+}
+#container2{
+       height:300px;
+   width:200px;
+     border:2px solid black;
+     background-color: transparent;
+     background-color: rgba(192, 192, 192, 0.5);
+   
+}
