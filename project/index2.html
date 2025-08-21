@@ -15,13 +15,27 @@
 <body>
   <h1 class="animated-heading">WELCOME TO QUIZ</h1>
   <h1 class="content" >خوش آمدید! آپ کے کوئز میں خیرمقدم ہے</h1>
+  <hr>
   
   <div class="box">
     <div id="conatiner"><b>Friendship Quotes
  </b></div>
     <div id="container1"><b>Funny Quotes</b></div>
-    <div id="container2"><b>Open Theme</b></div>
+    <div id="container2" onclick="openQuiz('index3.html')"><b>Open Theme</b></div>
   </div>
+  
+ <footer>
+  <p>
+    Welcome to our quiz corner! Explore and have fun by choosing a quiz that suits your mood—try the <strong>Friendship Quiz</strong> to test your bonds, the <strong>Funny Quiz</strong> for some laughs, or the <strong>Open Theme Quiz</strong> to challenge your creativity. Dive in and enjoy!
+  </p>
+</footer>
+<script>
+    function openQuiz(page) {
+      alert("You are in  open theme quiz page!");
+      window.location.href = page; 
+    }
+</script>
+
   
 </body>
 </html>
