@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <section>
+  
+    <div class="leaves">
+      <div class="set">
+        <div><img src="https://i.ibb.co/S0VnkZq/leaf-01.png" alt="leaf-01"></div>
+        <div><img src="https://i.ibb.co/fFrnHYd/leaf-02.png" alt="leaf-02"></div>
+        <div><img src="https://i.ibb.co/vdx8Jh5/leaf-03.png" alt="leaf-03"></div>
+        <div><img src="https://i.ibb.co/SdcBCvr/leaf-04.png" alt="leaf-04"></div>
+        <div><img src="https://i.ibb.co/S0VnkZq/leaf-01.png" alt="leaf-01"></div>
+        <div><img src="https://i.ibb.co/fFrnHYd/leaf-02.png" alt="leaf-02"></div>
+        <div><img src="https://i.ibb.co/vdx8Jh5/leaf-03.png" alt="leaf-03"></div>
+        <div><img src="https://i.ibb.co/SdcBCvr/leaf-04.png" alt="leaf-04"></div>
+      </div>
+    </div>
+
+    
+    <img class="bg" src="https://i.ibb.co/rfNqbQG/bg.jpg" alt="Background">
+    <img class="girl" src="https://i.ibb.co/W5ssvRf/girl.png" alt="Walking girl">
+    <img class="trees" src="https://i.ibb.co/QrMyLYc/trees.png" alt="Trees">
+
+    <div class="login" style="max-width: 700px; width: 100%;">
+      <h2>Shayari Competition</h2>
+
+     
+      <div class="quiz" data-id="q1" data-correct="b">
+        <p class="sher">
+          Thousands of desires, each so strong it takes my breath away, <br>
+          Many of my wishes were fulfilled, yet still, they felt too few.
+        </p>
+        
+        <p><pre>ہزاروں خواہشیں ایسی کہ ہر خواہش پہ دم نکلے
+بہت نکلے میرے ارمان لیکن پھر بھی کم نکلے</pre></p>
+        <hr>
+<p class="question">who is the poet of the above_mentioned poetry</p>
+        <div class="options">
+          <label><input type="radio" name="q1" value="a"> FAIZ AHMAD FAIZ</label><br>
+          <label><input type="radio" name="q1" value="b"> MIRZA GALIB</label><br>
+          <label><input type="radio" name="q1" value="c"> IQBAL</label><br>
+          <label><input type="radio" name="q1" value="d"> BASHIR BADRA</label>
+        </div>
+        <button class="check">Check Answer</button>
+        <span class="result" aria-live="polite"></span>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  
+    document.addEventListener('click', function(e) {
+      if (!e.target.classList.contains('check')) return;
+
+      const quiz = e.target.closest('.quiz');
+      if (!quiz) return;
+
+      const qId = quiz.getAttribute('data-id');
+      const correct = quiz.getAttribute('data-correct');
+      const selected = quiz.querySelector('input[name="' + qId + '"]:checked');
+      const resultBox = quiz.querySelector('.result');
+
+      if (!selected) {
+        resultBox.textContent = 'Please select an option.';
+        resultBox.style.color = '#aa7700';
+        return;
+      }
+
+      if (selected.value === correct) {
+        resultBox.textContent = 'Right ✅';
+        resultBox.style.color = 'green';
+      } else {
+        resultBox.textContent = 'Wrong ❌';
+        resultBox.style.color = 'red';
+      }
+    });
+  </script>
+</body>
+</html>
