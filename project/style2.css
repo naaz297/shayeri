@@ -1,115 +1,139 @@
-body{
-  background-image: url("image.jpg");
-  height:1000px;
-  width:500PX;
-  padding: 0;
+
+body {
   margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-image: url("image (1).jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
- 
-  
- 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
+
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 20px;
+  text-align: center;
+}
+
 .animated-heading {
   font-size: 3rem;
+  color: #40180A;
+  font-style: italic;
+  text-decoration: underline dotted;
+  margin: 20px 0;
+  text-align: center;
   animation: slideFadeInLeft 2s ease-in-out;
-  margin-left: 40%;
-  text-decoration:underline dotted;
-  text-align: center;
   white-space: nowrap;
-  font-style: italic;
+}
+
+.content {
+  font-size: 3rem;
   color: #40180A;
-  margin-bottom: 0%;
-  
-
-
-}
-
-
-@keyframes slideFadeInLeft{
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-.content{
-   font-size: 3rem;
+  font-style: italic;
+  text-decoration: underline dotted;
+  margin: 10px 0 30px 0;
+  text-align: center;
   animation: slideFadeInRight 2s ease-in-out;
-  margin-left: 20%;
-  text-decoration:underline dotted;
-  text-align: center;
   white-space: nowrap;
-  font-style: italic;
-  color: #40180A;
-  margin-top: 0%;
 }
+
+/* ANIMATIONS */
+@keyframes slideFadeInLeft {
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
 @keyframes slideFadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-
+  0% { opacity: 0; transform: translateX(50px); }
+  100% { opacity: 1; transform: translateX(0); }
 }
 
-
-.box{
-
- border:1px solid rgb(74, 74, 74);
- border-radius: 50px;
- width:700px;
- height:400px;
- display: flex;
-
- text-align: center;
- justify-content: space-around;
-
- padding:50px 50px 50px 50px;
- margin-left: 35px;
-
- font-family: "Playwrite AU QLD", cursive;
-  font-optical-sizing: auto;
+.box {
+  border: 1px solid rgb(74, 74, 74);
+  border-radius: 50px;
+  width: 900px;
+  max-width: 95%; 
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin: 20px auto; 
+  font-family: "Playwrite AU QLD", cursive;
   font-weight: 400;
   font-style: normal;
-
-     
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-#conatiner{
+#conatiner{ 
   height:300px;
-  width:200px;
-  border:2px solid black;
-    background-color: transparent;
+   width:200px;
+    border:2px solid black;
+     background-color: transparent; 
      background-color: rgba(192, 192, 192, 0.5);
-    
+      background-image: url("image3.jpg"); 
+      background-repeat: no-repeat;
+       background-size: cover; 
+       background-position: center;
+        text-align: center;
+       } 
+       #container1{
+         height:300px; 
+         width:200px;
+          border:2px solid black;
+           background-color: transparent;
+            background-color: rgba(192, 192, 192, 0.5);
+             background-image: url("image4.png");
+         background-repeat: no-repeat;
+          background-size: cover; 
+          background-position: center;
+         }
+          #container2{
+             height:300px;
+              width:200px; 
+              border:2px solid black; 
+              background-color: transparent; 
+              background-color: rgba(192, 192, 192, 0.5);
+               background-image: url("image6.webp");
+                background-position: center;
+                 background-repeat: no-repeat; 
+  background-size: cover;
+ }
 
-  
-    
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
-#container1{
-   height:300px;
-   width:200px;
-     border:2px solid black;
-        background-color: transparent;
-     background-color: rgba(192, 192, 192, 0.5);
-    
+
+footer {
+  background-color: #f06ee7;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #e566f6;
+  width: 100%;
 }
-#container2{
-       height:300px;
-   width:200px;
-     border:2px solid black;
-     background-color: transparent;
-     background-color: rgba(192, 192, 192, 0.5);
-   
+
+footer p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+footer strong {
+  color: #131313;
 }
